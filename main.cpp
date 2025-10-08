@@ -5,6 +5,8 @@
 #include <iomanip>
 #include "pixel.h"
 
+
+
 void average_colors(std::vector<Pixel> &pixel_list);
 void flip_vertically(std::vector<Pixel> &pixel_list);
 
@@ -38,7 +40,7 @@ void average_colors(std::vector<Pixel> &pixel_list) {
         sumB += p.b;
     }
     std::cout << std::fixed << std::setprecision(6);
-    std::cout << "Average R: " << static_cast<double>(sumR / n) << "\n";
+    std::cout << "Average R : " << static_cast<double>(sumR / n) << "\n";
     std::cout << "Average G: " << static_cast<double>(sumG / n) << "\n";
     std::cout << "Average B: " << static_cast<double>(sumB / n) << "\n";
 }
